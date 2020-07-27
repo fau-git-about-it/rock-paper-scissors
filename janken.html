@@ -72,10 +72,11 @@
                                 Score: player-${playerScore} computer-${computerScore}`);
                         console.log("You've lost the battle, but not the war. Let's get em next time!!");
                     }
-                    else  {//if (playRound(playerSelection) === "undefined") {
-                        alert(`Issa tie this round. 
+                    else  {
+                        i--;
+                        alert(`Issa tie. The round isn't over, go again. 
                             The score is the same: player-${playerScore} computer-${computerScore}`);
-                        console.log("Issa tie this round");
+                        console.log("Issa tie");
                     }
                     
                 }
