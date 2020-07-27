@@ -62,15 +62,15 @@
                     
                     if (playRound(playerSelection) === true) {
                         playerScore++;
-                        alert(`Good job, you've won. Keep it up! 
+                        alert(`Good job you won this round!
                                 Score: player-${playerScore} computer-${computerScore}`);
-                        console.log("Good job, you've won. Keep it up!!");
+                        console.log("Good job you won this round!");
                     }
                     else if (playRound(playerSelection) === false) {
                         computerScore++;
-                        alert(`You've lost the battle, but not the war. Let's get em next time!
+                        alert(`You lost this round, LOSER!!
                                 Score: player-${playerScore} computer-${computerScore}`);
-                        console.log("You've lost the battle, but not the war. Let's get em next time!!");
+                        console.log("You lost this round, LOSER!!");
                     }
                     else  {
                         i--;
@@ -93,9 +93,9 @@
                     console.log(`Winner winner, chimken Dinner! :D You won!! 
                                 Final Score: Player-${playerScore} Computer-${computerScore}`);
                 }
-                else 
+                /*else 
                     alert(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`);
-                    console.log(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`);
+                    console.log(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`); */
             }
     
         
