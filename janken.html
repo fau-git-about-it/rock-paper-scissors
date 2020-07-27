@@ -17,40 +17,39 @@
                 takes two @param: player selection and computer selection
                 and returns a string declaring the winner 
             */
-            
             function playRound(playerSelection, computerSelection = computerPlay()) {
-                    playerSelection = playerSelection.toLowerCase();
+                playerSelection = playerSelection.toLowerCase();
 
-                    if (playerSelection === "rock" && computerSelection === "scissors") {
-                        //alert("You's a rock-star! Rock crushes scissors, you's a rock-star winner!!");
-                        return true;
-                    }
-                    else if (playerSelection === "scissors" && computerSelection == "paper") {
-                        //alert("Whoop whoop! Scissors slices paper, winner winner sliced chicken dinner!"); 
-                        return true;
-                    }
-                    else if (playerSelection === "paper" && computerSelection === "rock") {
-                        //alert("Whoopity poopity! Paper wraps around rock, so it's wrap, you WIN!");
-                        return true;
-                    }
-                    else if (playerSelection === "scissors" && computerSelection === "rock") {
-                        // alert("Whamp whamp, rock just wrecked your whole existence. You's not hard enough loser!!");
-                        return false;
-                    }
-                    else if (playerSelection === "paper" && computerSelection === "scissors") {
-                        // alert("Whamp whamp, scissors cuts right through paper! You didn't make the cut loser!!");
-                        return false;
-                    }
-                    else if (playerSelection === "rock" && computerSelection === "paper") {
-                        // alert("Whamp whamp, paper just suffocated your rocky face plastic bag style! You's a loser who can't even inhale or exhale!!");
-                        return false;
-                    }
-                    else
-                        return;
+                if (playerSelection === "rock" && computerSelection === "scissors") {
+                    //alert("You's a rock-star! Rock crushes scissors, you's a rock-star winner!!");
+                    return true;
+                }
+                else if (playerSelection === "scissors" && computerSelection == "paper") {
+                    //alert("Whoop whoop! Scissors slices paper, winner winner sliced chicken dinner!"); 
+                    return true;
+                }
+                else if (playerSelection === "paper" && computerSelection === "rock") {
+                    //alert("Whoopity poopity! Paper wraps around rock, so it's wrap, you WIN!");
+                    return true;
+                }
+                else if (playerSelection === "scissors" && computerSelection === "rock") {
+                    // alert("Whamp whamp, rock just wrecked your whole existence. You's not hard enough loser!!");
+                    return false;
+                }
+                else if (playerSelection === "paper" && computerSelection === "scissors") {
+                    // alert("Whamp whamp, scissors cuts right through paper! You didn't make the cut loser!!");
+                    return false;
+                }
+                else if (playerSelection === "rock" && computerSelection === "paper") {
+                    // alert("Whamp whamp, paper just suffocated your rocky face plastic bag style! You's a loser who can't even inhale or exhale!!");
+                    return false;
+                }
+                else
+                    return;
             }
     
 
-             /* 
+            /* 
                 5 round game that keeps score and announces the winner at the end
             */
             function game() {
@@ -63,19 +62,19 @@
                     if (playRound(playerSelection) === true) {
                         playerScore++;
                         alert(`Good job you won this round!
-                                Score: player-${playerScore} computer-${computerScore}`);
+                                Score: Player-${playerScore} Computer-${computerScore}`);
                         console.log("Good job you won this round!");
                     }
                     else if (playRound(playerSelection) === false) {
                         computerScore++;
                         alert(`You lost this round, LOSER!!
-                                Score: player-${playerScore} computer-${computerScore}`);
+                                Score: Player-${playerScore} Computer-${computerScore}`);
                         console.log("You lost this round, LOSER!!");
                     }
                     else  {
                         i--;
                         alert(`Issa tie. The round isn't over, go again. 
-                            The score is the same: player-${playerScore} computer-${computerScore}`);
+                            The score is the same: Player-${playerScore} Computer-${computerScore}`);
                         console.log("Issa tie");
                     }
                     
@@ -93,9 +92,9 @@
                     console.log(`Winner winner, chimken Dinner! :D You won!! 
                                 Final Score: Player-${playerScore} Computer-${computerScore}`);
                 }
-                /*else 
-                    alert(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`);
-                    console.log(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`); */
+                // else 
+                //     alert(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`);
+                //     console.log(`Oof close game, issa tie! Both Player and Computer are tied at ${playerScore} a piece!`); */
             }
     
         
