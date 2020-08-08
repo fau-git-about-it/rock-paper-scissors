@@ -1,0 +1,60 @@
+body {
+   background-color: hotpink;
+   font-family: fantasy, Arial, sans-serif;
+}
+
+@font-face {
+   font-family: rakkasFont;
+   src: url(https://fonts.google.com/specimen/Rakkas?sidebar.open=true&selection.family=Rakkas);
+   font-weight: 900;
+}
+.selectionButtons {
+    font-family: fantasy;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+.selectionButton {
+    position: relative;
+    display: block;
+    font-size: 50px;
+    border-style: ridge;
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.scoreKeeper {
+   position: relative;
+   display: block;
+   font-size: 40px;
+   border: firebrick;
+   border-style: double;
+   border-top: gold;
+   
+   bottom: 0px;
+   width: 300px;
+   height: 300px;
+   margin: auto;
+   margin-top: 0px;
+   text-align: center;
+}
+
+.winnerAnnouncement {
+   position: relative;
+   display: inline-block;   
+   font-size: 150px;
+   font-family: "rakkasFont";
+   width: auto;
+   height: auto;
+   bottom: 450px;
+   left: 10px;
+   text-align: center;
+   text-shadow: black;
+   text-transform: capitalize;
+   margin: auto;
+   color:rgb(195, 195, 2);
+}
+
